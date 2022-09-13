@@ -1,7 +1,7 @@
 # CircuitPython Documentations
 ## Servo
 ### Code
-import time
+`import time
 import board
 import pwmio
 from adafruit_motor import servo
@@ -16,4 +16,4 @@ while True:
         time.sleep(0.01)
     for angle in range(180, 0, -5): 
         my_servo.angle = angle
-        time.sleep(0.01)
+        time.sleep(0.01)`
