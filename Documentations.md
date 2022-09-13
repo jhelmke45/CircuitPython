@@ -1,7 +1,7 @@
 # CircuitPython Documentations
 ## Servo
 ### Code
-`
+```
 import time
 import board
 import pwmio
@@ -18,4 +18,4 @@ while True:
     for angle in range(180, 0, -5): 
         my_servo.angle = angle
         time.sleep(0.01)
-        `
+        ```
