@@ -1,28 +1,117 @@
-# CPyProjectTemplate
-Put a description for your project here!
-This repo is a template VS code project for CircuitPython projects that automatically uploads your code to the board when you press F5. Requires F5Anything extension.
-## Use
-### Every new project:
-1. Make a GitHub account if you don't have one with your normal school credentials and sign into it.
-2. Click the big green Use This Template button at the top of this page.
-3. Name the new repository something appropriate to the purpose of your project (Your first one should probably be named `CircuitPython`).
-4. Hit "Create repository from template." (The default settings should be fine.)
-5. Open VS Code on your machine. Click Clone Repository.
-6. Paste in the link to the new repository you've just created from the template and hit enter.
-7. For the location, select the "STUDENT" drive if you have it or the document folder if you don't.
-8. Hit "Open Cloned Directory."
-9. Install the reccomended extensions when you get that popup in the lower right corner.
-### To commit from VS Code:
-1. Go to the little branch icon in the left bar of VS Code.
-2. Click the + icon next  to the files you want to commit.
-3. Write a message that descibes your changes in the "Message" box and hit commit.
-4. If you get an error about user.name and user.email, see the next section.
-5. Click the "Sync changes" button.
-### If you get an error about user.name and user.email
-1. Open Git Bash from the Windows Search Bar.
-2. FIlling in your actual information, run the following commands one line at a time. The paste shortcut is `Shift+Insert` or you can right click then hit paste. Spelling must match exactly:
+# CircuitPython
+This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.  If you want to draw inspiration from other classmates, feel free to check [this directory of all students!](https://github.com/chssigma/Class_Accounts).
+## Table of Contents
+* [Table of Contents](#TableOfContents)
+* [Hello_CircuitPython](#Hello_CircuitPython)
+* [CircuitPython_Servo](#CircuitPython_Servo)
+* [CircuitPython_Ultrasonic_Sensor](#CircuitPython_Ultrasonic_Sensor)
+* [CircuitPython_LCD](#CircuitPython_LCD)
+---
+
+## Hello_CircuitPython
+
+### Description & Code
+The goal for this assignment was to understand some basics of CircuitPython and get everything set up, and get control of the onboard Neopixel.
+
+Here's how you make code look like code:
+
+```python
+#Jack Helmke
+#This code makes the onboard neopixel flash different colors
+
+import board
+import neopixel
+import time
+import random
+ran1 = 0
+ran2 = 0
+ran3 = 0
+var = 0
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+dot.brightness = 0.3
+
+while True:
+    ran1 = random.randint(0, 125) 
+    ran2 = random.randint(0, 125) 
+    ran3 = random.randint(0, 125) 
+    
+
+    dot.fill((ran1, ran2, ran3))
+    time.sleep(.1)
+
 ```
-git config --global user.name YOURUSERNAME
-git config --global user.email YOURSCHOOLEMAIL
+
+
+### Evidence
+
+record the video
+
+
+### Wiring
+
+![helloCP](https://user-images.githubusercontent.com/113116262/192556289-57b5692b-f5d3-45b6-aedd-3aee8da0ab58.png)
+
+### Reflection
+The tricky part of this assignment really was just getting everything set up, but I didn't have too much trouble. It was fun messing with the RGB capabilities of the onboard Neopixel, and I ended up experimenting with randoms to make the Neopixel flash random colors. Overall, this was a good introduction into the basics of how CircuitPython works.
+
+
+
+
+## CircuitPython_Servo
+
+### Description & Code
+In this assignment I 
+
+```python
+Code goes here
+
 ```
-3. Return to step 3 of the previous section.
+
+### Evidence
+
+Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+### Wiring
+
+### Reflection!
+
+
+
+
+
+## CircuitPython_LCD
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+
+Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+### Wiring
+
+### Reflection
+
+
+
+
+
+## NextAssignment
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+
+### Reflection
