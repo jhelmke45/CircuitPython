@@ -175,7 +175,7 @@ https://user-images.githubusercontent.com/113116262/193279039-8a3f4104-4efb-4fac
 
 ### Reflection
 
-
+I did most of the code myself on this assignment, which was fun. I used the [simpleio](https://docs.circuitpython.org/projects/simpleio/en/latest/api.html) library for the ``` simpleio.map_range ``` function, which was essential to scale the sensor values into the color gradient I wanted. I had originally taken code from [Graham Gilbert-Schroeer](https://github.com/VeganPorkChop/CircutPython), but I ended up only keeping their setup code and redoing all of the logic for the gradients, and commenting on the code myself.
 
 
 ## CircuitPython_LCD
