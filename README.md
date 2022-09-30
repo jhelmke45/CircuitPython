@@ -175,7 +175,6 @@ https://user-images.githubusercontent.com/113116262/193279039-8a3f4104-4efb-4fac
 
 ### Reflection
 
-This assignment was fun, as I did most of the code myself. 
 
 
 
