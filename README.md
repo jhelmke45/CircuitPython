@@ -1,5 +1,5 @@
 # CircuitPython
-This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.  If you want to draw inspiration from other classmates, feel free to check [this directory of all students!](https://github.com/chssigma/Class_Accounts).
+
 ## Table of Contents
 * [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
@@ -13,7 +13,6 @@ This repository will actually serve as a aid to help you get started with your o
 ### Description & Code
 The goal for this assignment was to understand some basics of CircuitPython and get everything set up, and get control of the onboard Neopixel.
 
-Here's how you make code look like code:
 
 ```python
 #Jack Helmke
@@ -45,7 +44,11 @@ while True:
 
 ### Evidence
 
-record the video
+
+
+
+https://user-images.githubusercontent.com/113116262/193280040-159cefba-b5f6-412e-b17e-2df2534bcac3.mp4
+
 
 
 ### Wiring
@@ -53,7 +56,7 @@ record the video
 ![helloCP](https://user-images.githubusercontent.com/113116262/192556289-57b5692b-f5d3-45b6-aedd-3aee8da0ab58.png)
 
 ### Reflection
-The tricky part of this assignment really was just getting everything set up, but I didn't have too much trouble. It was fun messing with the RGB capabilities of the onboard Neopixel, and I ended up experimenting with randoms to make the Neopixel flash random colors. Overall, this was a good introduction into the basics of how CircuitPython works.
+The tricky part of this assignment really was just getting everything set up, but I didn't have too much trouble. It was fun messing with the RGB capabilities of the onboard Neopixel, and I ended up experimenting with the ``` random.randint() ``` function to make the Neopixel flash random colors. Overall, this was a good introduction into the basics of how CircuitPython works.
 
 
 
@@ -92,13 +95,19 @@ while True:
 
 ### Evidence
 
-record the video
+
+
+https://user-images.githubusercontent.com/113116262/193279812-11bfe0bf-6a7a-45b2-8bce-f6b39d90ab1b.mp4
+
+
 
 ### Wiring
 
 ![servo](https://user-images.githubusercontent.com/113116262/193041474-d091f6f6-306f-421a-9c83-9b513aab9223.png)
 
 ### Reflection!
+
+This assignment wasn't too tricky, as it was pretty easy to find [code from adafruit](https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51/circuitpython-servo). The setup was hard to understand at first with "PWM" and "duty cycle" thrown around, but the servo library is super helpful and simple commands such as ``` myServo.angle ``` are easy to understand and apply.
 
 
 
@@ -154,7 +163,11 @@ while True:
 
 ### Evidence
 
-video
+
+
+https://user-images.githubusercontent.com/113116262/193279039-8a3f4104-4efb-4fac-9704-4bfa79de0970.mp4
+
+
 
 ### Wiring
 
@@ -162,7 +175,7 @@ video
 
 ### Reflection
 
-
+This assignment was fun, as I did most of the code myself. 
 
 
 
