@@ -255,3 +255,4 @@ https://user-images.githubusercontent.com/113116262/193050475-0fadf3bb-b7c2-4c46
 ![lcd](https://user-images.githubusercontent.com/113116262/193049761-4b8ed3e4-7381-49f9-ba08-52bba7c2706b.png)
 
 ### Reflection
+The way buttons are controlled in CircuitPython threw me off at first, but once I got the grasp of it it made sense - using a previous state compared to the current state to detect change. I took most of this code from [Graham Gilbert-Schroeer](https://github.com/VeganPorkChop/CircutPython), but it makes sense to me and is mostly just putting similar chunks of code in if-else statements. The original code did not include the UP and DOWN indicators, so I added them into the code myself. 
