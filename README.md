@@ -6,6 +6,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_Ultrasonic_Sensor](#CircuitPython_Ultrasonic_Sensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
+* [Motor_Control](#Motor_Control)
 ---
 
 ## Hello_CircuitPython
@@ -256,3 +257,36 @@ https://user-images.githubusercontent.com/113116262/193050475-0fadf3bb-b7c2-4c46
 
 ### Reflection
 The way buttons are controlled in CircuitPython threw me off at first, but once I got the grasp of it it made sense - using a previous state compared to the current state to detect change. I took most of this code from [Graham Gilbert-Schroeer](https://github.com/VeganPorkChop/CircutPython), but it makes sense to me and is mostly just putting similar chunks of code in if-else statements. The original code did not include the UP and DOWN indicators, so I added them into the code myself. 
+
+## Motor_Control
+
+### Description
+
+In this assignment I made a stepper motor move at varying speeds based on the input from a potentiometer.
+
+### Code
+
+```python
+import board
+import time
+from analogio import AnalogOut, AnalogIn
+import simpleio
+
+motor = AnalogOut(board.A1)
+pot = AnalogIn(board.A0)
+
+while True:
+    print(simpleio.map_range(pot.value, 96, 65520, 0, 65535))
+    motor.value = int(simpleio.map_range(pot.value, 96, 65520, 0, 65535))
+    time.sleep(.1)          
+```
+_Code from [Kaz](https://github.com/kshinoz98/CircuitPython)_
+
+### Evidence
+
+![Screenshot 2022-11-01 115847](https://user-images.githubusercontent.com/113116262/200857888-3878a731-ac9b-48c8-87bf-4d9ee57448bc.png)
+_Wiring diagram from [Kaz](https://github.com/kshinoz98/CircuitPython)_
+
+### Reflection
+
+This assignment was made easier by the fact that we did some very similar wiring last year, but was 
