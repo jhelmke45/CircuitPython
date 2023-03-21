@@ -290,9 +290,3 @@ _Wiring diagram from [Kaz](https://github.com/kshinoz98/CircuitPython)_
 ### Reflection
 
 This assignment was made easier by the fact that we did some very similar wiring last year, but was still pretty annoying. There are a lot of little things that can go wrong, and I'm still not totally comfortable with the motor hardware and all of the little components that go with it. Thankfully, the code was relatively simple and easy to understand, utilizing a basic ```simpleio.map_range``` function and the easy-to-use ```motor.value```. 
-
-## Temperature_Sensor
-
-### Description
-
-In this assignment, I coded a temperature sensor
